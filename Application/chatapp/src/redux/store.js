@@ -1,5 +1,5 @@
 import {createStore} from 'redux';
-
+/*Look through documentation on selectors */
 // ActionTypes
 const ADD_MSG = "ADD_MSG";
 
@@ -31,4 +31,4 @@ const store = createStore(
     defaultMessagesState,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
     );
-export default store;
+export {store, addMsg};
