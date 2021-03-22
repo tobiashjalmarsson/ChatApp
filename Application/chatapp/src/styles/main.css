@@ -1,0 +1,34 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+/* Styles for the chat window */
+.chat__container {
+    text-align: center;
+    max-width: 60rem;
+    margin: 7.5% auto;
+}
+/* Styles for the messages */
+.message__container_from_me {
+    margin: 1rem auto;
+    width: 25rem;
+    border: 0.2rem solid white;
+    color: rgb(243, 237, 237);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: rgb(48, 181, 214);
+}
+.message__container_to_me {
+    margin: 1rem auto;
+    width: 25rem;
+    border: 0.2rem solid white;
+    color: white;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: rgb(202, 206, 207);
+}
