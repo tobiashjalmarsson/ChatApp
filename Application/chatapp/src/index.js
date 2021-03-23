@@ -6,13 +6,22 @@ import reportWebVitals from './reportWebVitals';
 
 import {Provider} from 'react-redux';
 import {store} from './redux/store';
+import LoginPage from './pages/LoginPage';
 
 const root = document.getElementById('root');
 console.log(store.getState());
-ReactDOM.render(
+/* ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <ChatPage />
+    </Provider>
+  </React.StrictMode>,
+  root
+); */
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <LoginPage />
     </Provider>
   </React.StrictMode>,
   root

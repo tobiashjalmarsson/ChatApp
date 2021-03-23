@@ -32,3 +32,26 @@ body {
     font-weight: bolder;
     background-color: rgb(202, 206, 207);
 }
+
+/*Styles for the LoginCard*/
+.card__container {
+    text-align: center;
+    max-width: 35rem;
+    margin: 7.5% auto;
+    border: 0.2rem solid black;
+}
+
+.form__input {
+    margin: 5% 5%;
+    width: 80%;
+    height: 3rem;
+    text-align: center;
+
+}
+
+.form__button {
+    margin: 1rem 10rem;
+    width: 40%;
+    height: 5rem;
+    font-size: 2rem;
+}
