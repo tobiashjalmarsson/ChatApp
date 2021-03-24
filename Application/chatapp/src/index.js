@@ -7,23 +7,23 @@ import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux';
 import {store} from './redux/store';
 import LoginPage from './pages/LoginPage';
+import {AuthProvider} from './context/AuthContext';
+import {BrowserRouter, Switch, Route } from 'react-router-dom';
+
+const App = () => (
+  <BrowserRouter>
+    <AuthProvider>
+      <Switch>
+        <Route path="/login" component={LoginPage}/>
+      </Switch>
+    </AuthProvider>
+  </BrowserRouter>
+);
 
 const root = document.getElementById('root');
 console.log(store.getState());
-/* ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <ChatPage />
-    </Provider>
-  </React.StrictMode>,
-  root
-); */
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <LoginPage />
-    </Provider>
-  </React.StrictMode>,
+    <App />,
   root
 );
 
